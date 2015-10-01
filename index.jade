@@ -1,0 +1,21 @@
+doctype html
+head
+    link(href="style.css" rel="stylesheet" type="text/css")
+body
+    h1 Pics
+    .photos
+        .flexbox
+            -for(var x=0;x< 20;x++){
+               .photo
+                .top
+                    img(src="http://beaufortfamilydentist.com/wp-content/uploads/2010/10/iStock_woman.png")
+                .bottom
+                    .left
+                        .title my photo !{x}
+                    .right
+                        .likes !{Math.floor(Math.random() * 10000 + 100)} likes
+
+            -}
+    input(type="button" id="test" value="rub me in my special place")
+script(src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript")            
+script(src="main.js" type="text/javascript")
